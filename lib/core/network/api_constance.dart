@@ -1,5 +1,5 @@
 class ApiConstance {
-  static const String baseUrl = 'https://api.escuelajs.co/api/v1/';
+  static const String baseUrl = 'https://api.escuelajs.co/api/v1';
   static const String productsPath = '$baseUrl/products';
   static const String categoriesPath = '$baseUrl/categories';
   static const String cartPath = '$baseUrl/cart';

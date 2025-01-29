@@ -8,8 +8,6 @@ class CategoryModel extends Category {
     required super.id,
     required super.name,
     required super.image,
-    required super.creationAt,
-    required super.updatedAt,
   });
 
   factory CategoryModel.fromJson(Map<String, dynamic> json) =>

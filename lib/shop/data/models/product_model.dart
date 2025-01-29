@@ -9,16 +9,14 @@ class ProductModel extends Product {
     required int id,
     required String title,
     required String description,
-    required String price,
-    required String category,
-    required String image,
+    required int price,
+    required List<String> images,
   }) : super(
           id: id,
           title: title,
           description: description,
           price: price,
-          category: category,
-          image: image,
+          images: images,
         );
 
   factory ProductModel.fromJson(Map<String, dynamic> json) =>

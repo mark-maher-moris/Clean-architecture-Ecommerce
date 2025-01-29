@@ -1,5 +1,6 @@
 import 'package:ecom_clean_arch/core/resources/Icon_manager.dart';
 import 'package:ecom_clean_arch/core/resources/color_manager.dart';
+import 'package:ecom_clean_arch/core/shared_widgets/logo_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_iconly/flutter_iconly.dart';
 
@@ -9,17 +10,20 @@ class HomeAppbar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 50,
+      height: 90,
       color: ColorManager.transparent,
       child: Row(
         children: [
           IconButton(
-            onPressed: () {},
+            onPressed: () {
+              Scaffold.of(context).openDrawer();
+            },
             icon: const Icon(
               IconManager.menuIcon,
               color: Colors.black,
             ),
           ),
+          LogoWidget(),
           const Spacer(),
           IconButton(
             onPressed: () {},
@@ -28,7 +32,7 @@ class HomeAppbar extends StatelessWidget {
               color: Colors.black,
             ),
           ),
-          const Spacer(),
+          SizedBox(width: 10),
           IconButton(
             onPressed: () {},
             icon: const Icon(
@@ -36,6 +40,7 @@ class HomeAppbar extends StatelessWidget {
               color: Colors.black,
             ),
           ),
+          SizedBox(width: 10),
         ],
       ),
     );

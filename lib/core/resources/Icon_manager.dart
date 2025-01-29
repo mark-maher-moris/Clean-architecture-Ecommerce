@@ -9,4 +9,5 @@ class IconManager {
   static const IconData searchIcon = IconlyBold.search;
   static const IconData notificationIcon = IconlyBold.notification;
   static const IconData menuIcon = IconlyBold.category;
+  static const IconData addIcon = Icons.add;
 }
