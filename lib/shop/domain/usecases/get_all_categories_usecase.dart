@@ -5,6 +5,6 @@ class GetAllCategoriesUsecase {
 
   GetAllCategoriesUsecase(this.baseProductsReposetory);
   execute() {
-    return baseProductsReposetory.getCategories();
+    return baseProductsReposetory.getAllCategories();
   }
 }

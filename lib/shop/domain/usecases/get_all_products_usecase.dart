@@ -7,6 +7,6 @@ class GetAllProductsUsecase {
   GetAllProductsUsecase(this.baseProductsReposetory);
 
   Future<List<Product>> execute() async {
-    return await baseProductsReposetory.getProducts();
+    return await baseProductsReposetory.getAllProducts();
   }
 }
