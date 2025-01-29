@@ -1,1 +1,3 @@
-class StringManager {}
+class StringManager {
+  static const String appName = 'VOLT';
+}
