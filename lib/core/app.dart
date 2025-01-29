@@ -1,3 +1,4 @@
+import 'package:ecom_clean_arch/shop/presentation/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 
 class MyApp extends StatefulWidget {
@@ -15,7 +16,7 @@ class _MyAppState extends State<MyApp> {
       theme: ThemeData(
         primarySwatch: Colors.amber,
       ),
-      home: Scaffold(),
+      home: HomeScreen(),
     );
   }
 }
